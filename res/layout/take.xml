@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="SpUsage,HardcodedText,ContentDescription" >
+
+    <SurfaceView
+        android:id="@+id/take_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.android.myTextView.myTextView
+        android:id="@+id/time"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#ffff0000"
+        android:textSize="20dp" />
+
+    <com.android.myTextView.myTextView
+        android:id="@+id/place"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="#ffff0000"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/composer_buttons_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clipChildren="false" >
+
+        <Button
+            android:id="@+id/composer_button_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/composer_camera"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/composer_button_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/composer_auto"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/composer_button_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/composer_time"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/composer_button_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/composer_place"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/composer_buttons_show_hide_button"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/composer_button" >
+
+        <ImageView
+            android:id="@+id/composer_buttons_show_hide_button_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/composer_icn_plus" />
+    </RelativeLayout>
+
+</RelativeLayout>
